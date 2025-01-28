@@ -28,14 +28,14 @@ panel:
   toc: Contents
 
 copyright:
-  # Shown at the bottom of the post
+  # 포스팅 밑에 보이는 라이센스 문장.. 관련 옵션
   license:
-    template: This post is licensed under :LICENSE_NAME by the author.
+    template: 
     name: CC BY 4.0
     link: https://creativecommons.org/licenses/by/4.0/
 
-  # Displayed in the footer
-  brief: Some rights reserved.
+  # Footer에 보이는 내용 관련
+  brief: 그가 몇 가지 권한을 가지고 있답니다~
   verbose: >-
     Except where otherwise noted, the blog posts on this site are licensed
     under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.

@@ -3,8 +3,12 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: soundcloud
+  icon: "fab fa-soundcloud"
+  url: "https://soundcloud.com/junho07021" #SoundCloud 주소 기입
+
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
 
 - type: email
   icon: "fas fa-envelope"
