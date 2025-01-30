@@ -489,6 +489,54 @@ header {
   }
 }
 
+/* figure 태그 내부의 이미지에 대해서 반응형 이미지 적용을 위한 코드 추가 */
+.content {
+  /* 기본 figure 스타일 */
+  figure {
+    max-width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-size: 0.875rem;
+    color: var(--text-muted-color);
+    margin-top: 4px;
+    word-wrap: break-word;
+  }
+
+  /* ✅ PC(데스크톱)에서는 가로 정렬 */
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 48%; /* 가로 너비 설정 (2개가 한 줄에 배치) */
+  }
+
+  /* 반응형: 모바일에서는 figure 내부 요소를 세로 정렬 */
+  @include bp.lte(bp.get(md)) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      width: 100%; /* 모바일에서는 전체 너비 사용 */
+      margin-bottom: 10px;
+    }
+  }
+}
+
 h2,
 h3,
 h4 {
