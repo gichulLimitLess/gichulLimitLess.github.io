@@ -1,6 +1,6 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
-title: "Github commit 복구/수정.. 이젠 자신있게 하자!"
+title: "Github commit 되돌리기.. 이젠 자신있게 하자!"
 categories: [협업, Git]
 tags: [협업, Git, Github]
 image:
