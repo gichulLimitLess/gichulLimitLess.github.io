@@ -174,7 +174,7 @@ BFS 뿐만 아니라 DFS, 재귀 등의 다양한 문제 풀이에서 시간/메
     <figcaption>알고리즘..너가 뭔데..?라는 마인드로 열심히 분석하고, 문제를 정복합시다.</figcaption>
   </figure>
   <figure>
-    <img src="../assets/img/posting-images/0328/0328-img2.jpg" alt="살아요">
+    <img src="../assets/img/posting-images/0328/0328-img2.JPG" alt="살아요">
     <figcaption>알고리즘 다 불주먹으로 부셔버린다는 마인드를 장착합시다👊</figcaption>
   </figure>
 </div>
