@@ -1,7 +1,7 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
 title: "BFS 탐색 중 안전하게 pruning(가지치기) 할 수 있는 기준"
-categories: [알고리즘, DFS/BFS]
+categories: [알고리즘]
 tags: [알고리즘, BFS, 가지치기]
 image:
   path: "../assets/img/posting-images/0328/0328-thumbnail.jpg"
