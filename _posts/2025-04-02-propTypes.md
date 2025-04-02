@@ -17,7 +17,7 @@ image:
 
 <br>
 
-## 🧑‍🔧`Prop-types` vs TypeScript
+## **🧑‍🔧`Prop-types` vs TypeScript**
 
 ### `Prop-types`
 
@@ -107,7 +107,7 @@ export default Welcome;
 
 <br>
 
-## 𝝏 아니 그래서 둘의 차이점이 뭐임?
+## **𝝏 아니 그래서 둘의 차이점이 뭐임?**
 
 간단하게 표로 정리해준다.
 
@@ -128,7 +128,7 @@ export default Welcome;
 
 <br>
 
-## 🧹마무리
+## **🧹마무리**
 
 맨땅에 헤딩 하면서 무의식적으로 사용했던 TypeScript, 그동안 난 “왜” 쓰는지를 몰랐었고, 그리고 굳이 찾아보려고 하지도 않았던 것 같다. 그런데, 이번 수업 시간에 생겼던 호기심 덕분에 이걸 우리가 왜 쓰고 있는 건지 깊은 탐구를 할 수 있던 좋은 시간이었다.
 
