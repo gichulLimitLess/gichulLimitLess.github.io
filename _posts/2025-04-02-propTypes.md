@@ -1,6 +1,6 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
-title: "Prop-types.. TypeScript..? 니넨 누구임? (React에서 props 타입 관리하는 법)"
+title: "Prop-types.. 얜 누구임? TypeScript랑 뭐가 다름? (React에서 props 타입 관리하는 법)"
 categories: [웹, React]
 tags: [React, props]
 image:
