@@ -1,8 +1,8 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
 title: "React 컴포넌트야.. 잘 살고 있니? (Life-cycle & Hook 정리)"
-categories: [웹, React]
-tags: [React, Component, Hook]
+categories: [웹]
+tags: [React, Component, Hook, 프론트엔드]
 image:
   path: "../assets/img/posting-images/20250407/20250407-thumbnail.JPG"
   alt: "무엇이든지 탄생을 하면, 죽음이 있습니다. 심지어, 저희가 매일 보는 숏츠에 있는 밈(Meme) 조차도요."

@@ -1,8 +1,8 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
 title: "Prop-types.. 얜 누구임? TypeScript랑 뭐가 다름? (React에서 props 타입 관리하는 법)"
-categories: [웹, React]
-tags: [React, props]
+categories: [웹, 앱]
+tags: [React, props, 프론트엔드]
 image:
   path: "../assets/img/posting-images/20250402/0402-thumbnail.jpeg"
   alt: "어느 곳에서든 안전에 유의합시다. Type Error에도 항상 신중해야 합니다. 이게 뭔 연관이냐고 묻는다면.. 반박시 여러분 말이 다 맞습니다."
