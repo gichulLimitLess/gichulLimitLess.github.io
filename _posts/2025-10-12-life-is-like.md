@@ -4,7 +4,7 @@ title: '"멋지게 살아야지"가 삶의 목표가 될 때'
 categories: [글쓰기연습]
 tags: [일상]
 image:
-  path: "../assets/img/posting-images/20251005/20251012-thumbnail.png"
+  path: "../assets/img/posting-images/20251012/20251012-thumbnail.png"
   alt: "갑자기 떠오르는 작년 교생실습의 추억, 정말 고마웠어 얘들아."
   width: 1200 # 이미지의 너비 조정
   height: 1200 # 이미지의 높이 조정
@@ -126,40 +126,11 @@ Figma? 이름은 들어봤지만 써본 적은 없었다.
 
 그리고 이것을 읽고 있는 여러분들도 - 항상 **“웃기지만 우습지 않게”**, 유쾌하고 멋지게 살아가길 진심으로 바라는 마음입니다. 진심으로 응원하겠습니다. 마지막으로, 음악인 답게 힐링할 수 있는.. 힘낼 수 있는.. 추천곡 3곡 남기며 마무리 하겠습니다.
 
+- **프라이머리 - 3호선 매봉역 (feat. 팔로알토, 빈지노)**
+- **볼빨간사춘기 - 나의 사춘기에게**
+- **유재하 - 지난날**
+
 <figure style="width: 100%;">
 	<img src="../assets/img/posting-images/20251012/20251012-last.png" alt="멋지게 살아야지" style="width:100%">
 	<figcaption>무대 못끊어... 멋지게 살아야지.</figcaption>
 </figure>
-
-- **프라이머리 - 3호선 매봉역 (feat. 팔로알토, 빈지노)**
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="https://youtu.be/78_q9YGwXts?si=bunEPFgqx2xnrP3g"
-    style="position: absolute; top:0; left:0; width:100%; height:100%;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
-
-- **볼빨간사춘기 - 나의 사춘기에게**
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="https://youtu.be/yH2avtBbG6Y?si=UF2hTQPhmRsNm_3o"
-    style="position: absolute; top:0; left:0; width:100%; height:100%;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
-
-- **유재하 - 지난날**
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="https://youtu.be/8dReS1cpfdw?si=WQV9jeOkwLow08x2"
-    style="position: absolute; top:0; left:0; width:100%; height:100%;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
