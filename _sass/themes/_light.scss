@@ -86,6 +86,7 @@
   --tag-border: #dee2e6;
   --tag-shadow: var(--btn-border-color);
   --tag-hover: #14b303;
+  --tag-text-color: #14b303;
   --search-tag-bg: #f8f9fa;
 
   /* Categories */
@@ -109,6 +110,9 @@
   --code-header-muted-color: #e5e5e5;
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
+
+  /* -- '태그 페이지' 관련 색상 -- */
+  --tagpage-hover-background-color: #8bde3d;
 
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);

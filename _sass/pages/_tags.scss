@@ -1,0 +1,45 @@
+@use '../abstracts/breakpoints' as bp;
+
+.tag-item {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+  border-radius: 0.7em;
+  padding: 4px 8px;
+  margin-bottom: 0.8rem;
+  margin-right: 0.8rem;
+  line-height: 2rem;
+  border: 1px solid var(--tag-border);
+  box-shadow: 0 0 3px 0 var(--tag-shadow);
+  color: var(--link-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  span {
+    margin-left: 0.6em;
+    font-size: 0.7em;
+    font-family: Oswald, sans-serif;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--tagpage-hover-background-color);
+    border-color: var(--tagpage-hover-background-color);
+    color: #fff;
+
+    .text-muted {
+      color: #ffffff !important;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid #8bde3d; // 접근성 표시 (선택사항)
+  }
+}
+
+#tags {
+  @include bp.lt(bp.get(lg)) {
+    justify-content: center !important;
+  }
+}

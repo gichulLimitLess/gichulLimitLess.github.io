@@ -12,7 +12,7 @@ tabs:
   # format: <filename_without_extension>: <value>
   home: 홈
   categories: 카테고리
-  # tags: 태그
+  tags: 태그
   archives: 아카이브
   about: 기처리는 누구인가?
 

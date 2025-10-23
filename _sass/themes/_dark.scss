@@ -86,6 +86,7 @@
   --tag-border: rgb(59, 79, 88);
   --tag-shadow: rgb(32, 33, 33);
   --dash-color: rgb(63, 65, 68);
+  --tag-text-color: #14b303;
   --search-tag-bg: #292828;
 
   /* Categories */
@@ -110,6 +111,9 @@
   --code-header-icon-color: #565656;
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
+
+  /* -- '태그 페이지' 관련 색상 -- */
+  --tagpage-hover-background-color: #14b303;
 
   .light {
     display: none;

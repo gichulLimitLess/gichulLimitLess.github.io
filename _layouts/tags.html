@@ -1,0 +1,26 @@
+---
+layout: page
+# All the Tags of posts.
+---
+
+<div id="tags" class="d-flex flex-wrap mx-xl-2">
+  {% assign tags = '' | split: '' %}
+  {% for t in site.tags %}
+    {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+
+  {% assign sorted_tags = tags | sort_natural %}
+
+  {% for t in sorted_tags %}
+    <div class="tag-wrapper">
+      <div
+				class="tag-item"
+				role="link"
+				tabindex="0"
+				onclick="location.href='{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}'">
+				{{ t -}}
+				<span class="text-muted">{{ site.tags[t].size }}</span>
+			</div>
+    </div>
+  {% endfor %}
+</div>
