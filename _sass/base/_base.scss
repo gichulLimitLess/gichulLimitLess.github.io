@@ -240,6 +240,14 @@ main {
   &:not(:last-child) {
     margin-right: 0.2rem;
   }
+
+  // hover 시에 초록색으로 변경
+  &:hover {
+    background: #14b303 !important; /* 초록색 */
+    color: #fff !important;
+    transition: background 0.3s ease;
+    border-color: #14b303 !important;
+  }
 }
 
 .rounded-10 {
@@ -341,12 +349,12 @@ main {
   text-align: left;
 }
 
-/* Overwrite bootstrap outline button */
-.btn.btn-outline-primary {
-  &:not(.disabled):hover {
-    border-color: #007bff !important;
-  }
-}
+// /* Overwrite bootstrap outline button */
+// .btn.btn-outline-primary {
+//   &:not(.disabled):hover {
+//     border-color: #14b303 !important;
+//   }
+// }
 
 .disabled {
   color: rgb(206, 196, 196);
