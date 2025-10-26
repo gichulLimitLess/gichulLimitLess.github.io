@@ -174,8 +174,8 @@ webmaster_verifications:
 
 사이트맵은 정상적으로 배포된 사이트라면, 사이트의 기본 url 뒤에 `/sitemap.xml` 을 추가로 입력하면 확인할 수 있다. 아 물론, 사이트맵 접근 정책은 서비스마다 다를 수 있다. 네이버 등의 사이트에서는 직접 url로 입력해서 들어가지 못할 수도 있다. 우리가 배포한 사이트에서는 아마 접속이 잘 될 것이므로, `sitemap.xml` 이 잘 배포 되었는지 확인하려면 아래와 같이 입력해 보도록 하자.
 
-> https://[자신의 사이트 기본 url]/sitemap.xml
-- *예시) https://gichullimitless.github.io/sitemap.xml*
+> https://[자신의 사이트 기본 url]/sitemap.xml <br/>
+> *예시) https://gichullimitless.github.io/sitemap.xml*
 
 이것을 Google Search Console의 좌측 메뉴에서 ‘색인 → 사이트맵’ 선택한 다음에 각자 해당하는 `sitemap.xml` 주소를 입력한 다음에 제출하면 된다. 이것을 통해서 구글봇은 우리의 블로그 글들을 하나씩 색인해서 검색창에 띄워주게… 된다고 한다.
 
