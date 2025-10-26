@@ -1,6 +1,6 @@
 ---
 # [해당 부분은 인트로(글 제목, 카테고리, 썸네일 이미지 등) 관련 정보]
-title: '“Jekyll 블로그 커스터마이징 깔짝 해보기!'
+title: 'Jekyll 블로그 커스터마이징 깔짝 해보기!'
 categories: [웹]
 tags: [정적 사이트, SEO]
 image:
@@ -19,7 +19,7 @@ image:
 
 그런데, 문제가 발생했다. 물론 알고 있는 것이 별로 없는 나지만, 해당 블로그는 Jekyll 정적 블로그 테마 중 유명한 테마 중 하나인 ‘Chirpy’ 테마를 그대로 가져와서 운영중인 블로그여서, 폴더 구조가 매우 복잡했던 것. 테마를 그대로 가져와서 블로그 포스팅만 올릴 때에는 몰랐는데, 블로그 자체의 디자인을 바꾸려다 보니 블로그 자체에 생각보다 복잡한 기능들이 많았던 것. 
 
-### 블로그 태그 색깔 변경하는 데 하루를 쓰는 사람이 있다?
+### 블로그 태그 색깔 변경하는 데 하루를 쓰는 사람이 있다? 근데 어쩔 수 없었어요...
 
 CSS 스타일을 바꾸는 데에도 서로 의존해 있는 스타일들이 정말 많아서, CSS 우선순위 파악이 너무 힘들었다. 특히, 개발 의도가 전체적인 스타일을 잡은 다음에, 각 세부 스타일들에는 각기 다른 스타일을 적용하기 위해서 `!important` 옵션을 다양한 scss 파일에 넣어 놓은 것인지는 모르겠으나, 300개가 넘는 속성에 적용되어 있는 `!imporant` 옵션 때문에 CSS 우선순위 추적이 너무 힘들었다. 하루종일 태그 색깔 하나 바꾸려고 스타일 우선순위를 추적하고 있는 게 내겐 너무 비용이 낭비되는 느낌이었다. 해당 페이지의 버튼에만 스타일을 적용하려고 `!imporant` 를 적용하니까 계속 적용 안되서 보니까, 렌더링 순서상 나중에 로드된 SCSS의 `!imporant` 가 우선 적용되고 있었고… 이것보다 상위 스타일시트에도 `!important` 가 박혀 있었고, 아주 난리도 아니었다.
 
@@ -43,7 +43,7 @@ CSS 스타일을 바꾸는 데에도 서로 의존해 있는 스타일들이 정
 layout: page
 # All the Tags of posts.
 ---
-
+{% raw %}
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
   {% assign tags = '' | split: '' %}
   {% for t in site.tags %}
@@ -55,16 +55,17 @@ layout: page
   {% for t in sorted_tags %}
     <div class="tag-wrapper">
       <div
-				class="tag-item"
-				role="link"
-				tabindex="0"
-				onclick="location.href='{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}'">
-				{{ t -}}
-				<span class="text-muted">{{ site.tags[t].size }}</span>
-			</div>
+        class="tag-item"
+        role="link"
+        tabindex="0"
+        onclick="location.href='{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}'">
+        {{ t -}}
+        <span class="text-muted">{{ site.tags[t].size }}</span>
+      </div>
     </div>
   {% endfor %}
 </div>
+{% endraw %}
 ```
 
 결과적으로 아래와 같이 내가 의도한 대로 hover 시에 초록색 배경이 뜨면서 넘어가는 스타일을 구현할 수는 있긴 했다. 하루종일 삽질 하면서 문득 이전에 프론트엔드 개발을 배우면서 들었던 내용이 하나 스쳐 지나갔다.
@@ -136,7 +137,7 @@ SEO의 시작은 “이거 내꺼임!” 하고 소유권 인증을 하는 거�
 
 <figure style="width: 100%;">
 	<img src="../assets/img/posting-images/20251026/20251026-img4.jpeg" alt="속성 유형 선택" style="width:100%">
-	<figcaption>속성 유형 중에서 'URL 접두어' 옵션을 선택하고, 거기에다가 내 블로그 기본 주소를 입력해 주었다. 그런 다음, "HTML 태그" 옵션을 클릭해, 거기에 'content' 부분에 적혀 있는 키를 복사한 다음, 프로젝트에 집어넣고 push 한 다음, 다시 확인 요청 하니까 오른쪽과 같이 사진이 뜬다.</figcaption>
+	<figcaption>속성 유형 중에서 'URL 접두어' 옵션을 선택하고, 거기에다가 내 블로그 기본 주소를 입력해 주었다. 그런 다음, "HTML 태그" 옵션을 클릭해, 거기에 'content' 부분에 적혀 있는 키를 복사한 다음, 프로젝트에 집어넣고 push 한 다음, 다시 확인 요청을 해주면 된다.</figcaption>
 </figure>
 
 해당 접두어를 입력하고 나서 구글은 소유권 확인을 위해서 여러 가지 옵션을 제공해 준다. 여러 옵션 중에서 나는 “HTML 태그” 옵션을 선택했다. 이 옵션을 선택한 이유는, Chirpy 테마를 사용하는 내 입장에서는, 이 태그에서 사용하는 content 키를 `_config.yml` 에다가 등록만 하고 github에 push만 해주면 끝이었기 때문이다. Chirpy 테마에는 github에 push만 하면, 배포는 알아서 잘 되는 자동화 스크립트가 내장되어 있어 편하다.
