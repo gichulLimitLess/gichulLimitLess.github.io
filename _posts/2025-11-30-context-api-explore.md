@@ -69,7 +69,7 @@ image:
 <div class="image-container">
   <figure>
     <img src="../assets/img/posting-images/20251130/20251130-img2.png" alt="Nano 바나나 프로">
-    <figcaption>Context API는 단순히 Provider에서 상태를 ‘관리’하며, useContext를 통해서 ‘통로를 뚫는다’라는 느낌으로 가져가면 이해하기 편할 것이다. 즉, **‘상태 전달’**이 가장 큰 목적 (위 그림은 Gemini의 Nano Banana Pro 모델로 생성됨)</figcaption>
+    <figcaption>Context API는 단순히 Provider에서 상태를 ‘관리’하며, useContext를 통해서 ‘통로를 뚫는다’라는 느낌으로 가져가면 이해하기 편할 것이다. 즉, ‘상태 전달’이 가장 큰 목적 (위 그림은 Gemini의 Nano Banana Pro 모델로 생성됨)</figcaption>
   </figure>
   <figure>
     <img src="../assets/img/posting-images/20251130/20251130-img3.png" alt="미쳤다">
