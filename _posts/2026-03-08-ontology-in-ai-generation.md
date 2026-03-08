@@ -46,7 +46,7 @@ image:
 
 물론 기존의 RAG(Retrieval-Augmented Generation) 방식도 훌륭한 도구다. 텍스트를 숫자로 변환(Embedding)해서 뭉탱이로 저장해 두고, 질문이 들어오면 "이 질문이랑 제일 비슷한 숫자 덩어리 가져와!" 하는 방식은 문서 검색에 아주 탁월하다. 하지만 이 벡터 DB 기반의 단순 RAG는 기본적으로 **'키워드와 의미의 유사성'** 에만 크게 의존한다는 치명적인 한계가 있다.
 
-**1. 동음이의어와 뉘앙스의 대환장 파티**
+### 1. 동음이의어와 뉘앙스의 대환장 파티
 예를 들어, 우리 회사에 '애플'이라는 사내 비밀 프로젝트가 있다고 치자. 사용자가 "최근 애플 프로젝트 이슈가 뭐야?"라고 물었을 때, 단순 벡터 검색은 문맥 없이 '과일 사과'의 효능이나 '아이폰'을 만드는 Apple 사와 관련된 사내 뉴스 스크랩 문서를 뒤적거릴 확률이 높다. 기업 내부의 고유 명사, 은어, 특정 도메인에서만 쓰이는 뉘앙스를 벡터 값만으로는 완벽히 구분하기 힘들기 때문이다.
 
 <figure style="width: 100%;">
@@ -54,7 +54,7 @@ image:
 	<figcaption>단순하게 '애플'이라는 동음이의어가 있으면, 유사도 검색 기반으로 검색을 때리니.. 헛소리를 할 확률이 높다는 것이다.</figcaption>
 </figure>
 
-**2. 꼬리에 꼬리를 무는 질문(Multi-hop reasoning)에 쥐약**
+### 2. 꼬리에 꼬리를 무는 질문(Multi-hop reasoning)에 쥐약
 기존 RAG는 "A는 B다"라는 1차원적인 문서는 기가 막히게 잘 찾는다. 하지만 **"A와 C의 관계는 뭐야?"** 같은 복합적인 질문이 들어오면 AI는 뇌 정지가 온다.
 마치 프론트엔드에서 `userId`를 가지고 `Team API`를 찔러서 `teamId`를 얻은 다음, 다시 `Project API`를 찔러야 최종 결과를 알 수 있는 상황인데, 단순 RAG는 한 번의 검색으로 끝내버리려 하니 "A가 B랑 연관되어 있고, B가 C랑 연관되어 있으니 A와 C도 관계가 있겠네!"라는 논리적 연결 고리를 스스로 찾아내지(추론하지) 못하는 것이다.
 
@@ -138,7 +138,7 @@ image:
 
 우리, 이제는 다른 것들 최적화만큼이나 온톨로지적 사고방식에도 찐하게 관심을 가져보는 것은 어떨까.
 
-### 📚 참고 자료 (References)
+### 📚 참고가 많이 되었던 자료들 (References)
 
 - [RAG is Dead … Long Live RAG](https://suedbroecker.net/2025/12/14/rag-is-dead-long-live-rag/) (Thomas Suedbroecker's Blog, 2025)
 - [Stop Saying RAG Is Dead](https://hamel.dev/notes/llm/rag/not_dead.html) (Hamel Husain's Blog, 2025)
